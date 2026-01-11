@@ -48,6 +48,13 @@ nav .menu{
   
   
 }
+
+nav .menu:hover> :not(:hover){
+opacity: .7;
+filter: blur(3px)
+}
+
+
 nav .menu a{
   font-size: 16px;
   color: #000000;
@@ -58,6 +65,11 @@ nav .menu a{
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+  
+}
   
   
 }
@@ -67,11 +79,11 @@ nav .menu .btn {
 }
 
 #hero{
-  /* border: 1px red; */
+
   width: 1363px;
-height:700px;
-padding:5%;
-margin:2%;
+ height:700px;
+ padding:5%;
+ margin:2%;
 
   display: flex;
   gap:5%;
@@ -99,6 +111,33 @@ margin:2%;
  background-position: center;
  background-size: cover;
  
+}
+
+.hero-sec .early-access{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.822);
+    color: #469165;
+    border-radius: 20px;
+    width: 240px;
+    margin: 122px auto 16px;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    
+    
+}
+#hero .hero-sec .early-access:hover> :not(:hover){
+opacity: .7;
+background-color: #222;
+color: white;
+}
+.hero-container .early-access img {
+    margin-right: 6px;
+    justify-content: space-between;
+    
 }
 
 #hero .hero-content h1{
@@ -147,8 +186,26 @@ text-align: center;
 #about .about-container .about-info{
   display: flex;
   justify-content: space-around;
+  
+}
+
+#about .about-container .about-info .info-card{
+  gap: 16;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 1);
+  width: 322px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16;
+  padding: 24px;
+  text-align: center;
 
 }
+
 
 #about .info-card-img-box{
       background-color: #F95555;
@@ -161,8 +218,69 @@ text-align: center;
     margin: 0px auto 16px;
     
 }
-*{
-  margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.solution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 45px;
+    width: 85%;
+    max-width: 1360px;
+    
+}
+
+.solution-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    width: 85%;
+    max-width: 1360px;
+    gap: 65px;
+    transition: 0.3s;
+}
+
+.solution-container .knowledge {
+    width: 550px;
+    transition: 0.3s;
+    height: 550px;
+}
+
+.soluction-content {
+    transition: 0.3s;
+    width: 1360px;
+    padding: 33px;
+    border-radius: 10px;
+}
+
+.soluction-content .the-solution {
+    font-size: 16px;
+    color: #30B868;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.soluction-content h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #001931;
+}
+
+.soluction-content p {
+    line-height: 20px;
+    color: #627382;
+    margin-bottom: 40px;
+}
+
+.soluction-content ul {
+    list-style: none;
+    
+}
+
+.soluction-content ul li {
+    font-size: 16px;
+    color: #001931;
+    line-height: 20px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
 }
